@@ -63,7 +63,7 @@ type ChatCompletionsStreamResponseChoice struct {
 
 type ChatCompletionsStreamResponseChoiceDelta struct {
 	Content          *string    `json:"content,omitempty"`
-	ReasoningContent *string    `json:"reasoning_content,omitempty"`
+	ReasoningContent *string    `json:"reasoning_content,omitempty,alias=reason"`
 	Role             string     `json:"role,omitempty"`
 	ToolCalls        []ToolCall `json:"tool_calls,omitempty"`
 }
